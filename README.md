@@ -8,7 +8,7 @@ A demo of RS-viz is available at [http://datascience.ismb.it/rs-viz/](http://dat
 
 ## Installation
 
-After cloning the repository, it is necessary to install the dependeces.
+After cloning the repository, it is necessary to install the dependencies.
 
 ```bash
 $ npm install
