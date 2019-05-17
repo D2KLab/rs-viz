@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="bundle.js"></script>
+
+    <title>Recommender system dataset visualizer</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="py-4 text-center">
+            <h2>Recommender system dataset visualizer
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalCenter">
+                    &#63;
+                </button>
+            </h2>
+        </div>
+
+        <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCenterTitle">Help</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="height: 85%">
+            <div class="px-4 col-lg-4">
+                <form id="form">
+                    <div class="mb-3">
+                        <label for="dataset">Select dataset</label>
+                        <select class="form-control" id="dataset" required>
+                            <option value="ml-100k" selected="selected">MovieLens 100K</option>
+                            <option value="ml-1m">MovieLens 1M</option>
+                            <option value="lastfm">HetRec LastFM</option>
+                            <option value="file">Custom dataset</option>
+                        </select>
+                        <small id="file-help" class="form-text text-muted">
+                            Select a default dataset or a custom one.
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="file">Upload dataset</label>
+                        <input type="file" class="form-control-file" id="file" name="file" disabled>
+                        <small id="file-help" class="form-text text-muted">
+                            Provide a custom dataset as a CSV file.
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="separator">Field separator</label>
+                        <select class="form-control" id="separator" required disabled>
+                            <option value="tabulation" selected="selected">Tabulation</option>
+                            <option value="comma">Comma</option>
+                            <option value="space">Space</option>
+                            <option value="colon">Colon</option>
+                            <option value="semicolon">Semi colon</option>
+                            <option value="doublecolon">Double colon</option>
+                        </select>
+                        <small id="separator-help" class="form-text text-muted">
+                            The field separator used by the dataset.
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="threshold">Rating threshold</label>
+                        <input type="number" class="form-control" id="threshold" name="threshold" min="0" value="3"
+                            required>
+                        <small id="threshold-help" class="form-text text-muted">
+                            The rating threshold between relevant and irrelevant items.
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="size">Normalized users and items</label>
+                        <input type="number" class="form-control" id="size" name="size" min="1" value="100" required>
+                        <small id="size-help" class="form-text text-muted">
+                            The number of normalized users and items to show in the plot.
+                        </small>
+                    </div>
+
+                    <hr class="mb-4">
+
+                    <button id="btnSubmit" class="btn btn-primary btn-lg btn-block" type="submit">Visualize the
+                        dataset</button>
+                </form>
+            </div>
+
+            <div id="plot" class="px-0 col-lg-8"></div>
+        </div>
+    </div>
+</body>
+
+</html>
