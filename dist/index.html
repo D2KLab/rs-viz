@@ -6,14 +6,14 @@
 
     <script src="bundle.js"></script>
 
-    <title>Recommender system dataset visualizer</title>
+    <title>RS-viz</title>
 </head>
 
 <body>
     <div class="container-fluid">
 
         <div class="py-4 text-center">
-            <h2>Recommender system dataset visualizer
+            <h2>RS-viz: a recommender system dataset visualizer
                 <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalCenter">
                     &#63;
                 </button>
@@ -25,13 +25,25 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalCenterTitle">Help</h5>
+                        <h5 class="modal-title" id="modalCenterTitle">RS-viz help</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <p>This tool can create a 3D scatter plot representing a summary of the ratings available in a
+                            recommender system dataset.</p>
+                        <p>You can use a built-in dataset or choose to upload a custom one. The code of this application
+                            runs entirely in your browser, so no private information is sent to remote servers.</p>
+                        <p>The custom dataset should be available in a CSV file, where the first column represents the
+                            user, the second the item, and the third the rating, following a MovieLens-like format.
+                            Please use as field separator only one of the supported characters.</p>
+                        <p>You also need to specify the rating threshold between relevant and irrelevant items for
+                            binarizing the dataset and the number of normalized users and items shown in the scatter
+                            plot, that is the size of a squared rating matrix in the transformed space as displayed in
+                            the visualization.</p>
+                        <p>The resulting plot can be explored by interacting with the camera and also exported as a PNG
+                            file.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -52,7 +64,7 @@
                             <option value="file">Custom dataset</option>
                         </select>
                         <small id="file-help" class="form-text text-muted">
-                            Select a default dataset or a custom one.
+                            Select a built-in dataset or use a custom one.
                         </small>
                     </div>
 
@@ -92,7 +104,7 @@
                         <label for="size">Normalized users and items</label>
                         <input type="number" class="form-control" id="size" name="size" min="1" value="100" required>
                         <small id="size-help" class="form-text text-muted">
-                            The number of normalized users and items to show in the plot.
+                            The number of normalized users and items to show in the scatter plot.
                         </small>
                     </div>
 

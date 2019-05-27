@@ -8,13 +8,13 @@ A demo of RS-viz is available at [http://datascience.ismb.it/rs-viz/](http://dat
 
 ## Installation
 
-After cloning the repository, it is necessary to install the dependencies.
+After cloning the repository, it is necessary to install the Node.js dependencies.
 
 ```bash
 $ npm install
 ```
 
-Then, it is possible to generate a bundled JavaScript file with [webpack](https://webpack.js.org/).
+Then, it is possible to generate a bundled JavaScript file using [webpack](https://webpack.js.org/).
 
 ```bash
 $ npm run build
@@ -22,8 +22,8 @@ $ npm run build
 
 ## Usage
 
-The resulting code is available in the `./dist` directory which can be published with any web server.
-To serve it with an embedded web server you can run the following command.
+The resulting code is available in the `./dist` directory which can be published on any web server.
+To publish it with an embedded web server for testing purposes you can run the following command.
 
 ```bash
 $ npm start
