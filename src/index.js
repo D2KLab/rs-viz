@@ -96,7 +96,7 @@ function processData(data, separator, threshold, size) {
     let items = [];
 
     rows.forEach(function (row) {
-        if (row[2] > threshold) {
+        if (+row[2] > +threshold) {
             users.push(row[0]);
             items.push(row[1]);
         }
