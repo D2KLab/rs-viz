@@ -29,7 +29,7 @@ To publish it on an embedded web server for testing purposes you can run the fol
 $ npm start
 ```
 
-## Publication
+## Publications
 
 - Monti D., Rizzo G., Morisio M. (2019). Visualizing Ratings in Recommender System Datasets. In IntRS 2019: Interfaces and Human Decision Making for Recommender Systems 2019. http://ceur-ws.org/Vol-2450/short2.pdf
 
