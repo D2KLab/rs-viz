@@ -23,11 +23,15 @@ $ npm run build
 ## Usage
 
 The resulting code is available in the `./dist` directory which can be published on any web server.
-To publish it with an embedded web server for testing purposes you can run the following command.
+To publish it on an embedded web server for testing purposes you can run the following command.
 
 ```bash
 $ npm start
 ```
+
+## Publication
+
+- Monti D., Rizzo G., Morisio M. (2019). Visualizing Ratings in Recommender System Datasets. In IntRS 2019: Interfaces and Human Decision Making for Recommender Systems 2019. http://ceur-ws.org/Vol-2450/short2.pdf
 
 ## Team
 
