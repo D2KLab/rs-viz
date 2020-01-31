@@ -6,7 +6,7 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "start": "http-server dist",
+    "start": "http-server docs",
     "build": "webpack"
   },
   "keywords": [],
