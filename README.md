@@ -4,7 +4,7 @@ RS-viz is a Web-based tool for graphically visualizing the main characteristics 
 
 ## Demo
 
-A demo of RS-viz is available at [http://datascience.ismb.it/rs-viz/](http://datascience.ismb.it/rs-viz/).
+A demo of RS-viz is available at [https://d2klab.github.io/rs-viz/](https://d2klab.github.io/rs-viz/).
 
 ## Installation
 
@@ -22,7 +22,7 @@ $ npm run build
 
 ## Usage
 
-The resulting code is available in the `./dist` directory which can be published on any web server.
+The resulting code is available in the `./docs` directory which can be published on any web server.
 To publish it on an embedded web server for testing purposes you can run the following command.
 
 ```bash
